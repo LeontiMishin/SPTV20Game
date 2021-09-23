@@ -32,6 +32,10 @@ public class SPTV20Game {
                 }else{
                     if(attempt < 3) {
                         System.out.println("Неправильно, поробуй ещё раз: ");
+                        if(gameNum < userNum){
+                            System.out.println("число меньше " + userNum);}
+                        if(gameNum > userNum){
+                            System.out.println("число больше " + userNum);}
                         attempt=attempt+1;
                     }else{
                         System.out.println(" ;) Ты проиграл. Задумано число: " + gameNum);
